@@ -7,7 +7,9 @@ RUN apt-get install -y git
 RUN mkdir -p /code
 WORKDIR /code
 
-RUN npm install -g staticrypt@3.*
+RUN npm install -g staticrypt@3.* \
+    && npm install -g yargs@17.7.2 --save-exact \
+    && cd $(npm root -g)/staticrypt && npm install yargs@17.7.2 --save-exact
 RUN pip install beautifulsoup4
 
 # With embedding of Assets
