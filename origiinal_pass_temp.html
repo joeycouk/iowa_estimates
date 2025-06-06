@@ -178,75 +178,68 @@
     </style>
   </head>
 
-  <body class="staticrypt-body" style="background: radial-gradient(ellipse at center, #232526 0%, #0f2027 100%); min-height: 100vh; margin: 0; font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;">
-      <div style="background:rgba(20,20,20,0.98);border-radius:18px;box-shadow:0 0 32px #00fff7,0 0 8px #ff003c inset;padding:48px 32px 32px 32px;max-width:420px;width:100%;text-align:center;position:relative; border:2px solid #00fff7;">
-        <div style="position:absolute;top:-60px;left:50%;transform:translateX(-50%);">
-          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="50" cy="50" rx="48" ry="48" fill="#232526" stroke="#00fff7" stroke-width="4"/>
-            <!-- Fancy stylized tree icon -->
-            <g>
-              <rect x="46" y="60" width="8" height="20" rx="3" fill="#7c5c2b"/>
-              <ellipse cx="50" cy="55" rx="22" ry="18" fill="#00fff7" fill-opacity="0.18"/>
-              <ellipse cx="50" cy="48" rx="18" ry="15" fill="#00ffb3" fill-opacity="0.35"/>
-              <ellipse cx="50" cy="42" rx="14" ry="12" fill="#00fff7"/>
-              <ellipse cx="50" cy="38" rx="8" ry="7" fill="#fff" fill-opacity="0.7"/>
-              <ellipse cx="50" cy="35" rx="4" ry="3" fill="#00fff7" fill-opacity="0.9"/>
-            </g>
-          </svg>
-        </div>
-        <h1 style="margin-top:56px;font-size:2.1em;color:#00fff7;font-family:'Share Tech Mono', monospace;letter-spacing:0.08em;text-shadow:0 0 8px #00fff7,0 0 2px #fff;">Sagasys Technology Group</h1>
-        <p style="color:#ff003c;font-size:1.1em;margin-bottom:2em;font-family:'Share Tech Mono', monospace;text-shadow:0 0 4px #ff003c;">[ ACCESS RESTRICTED ]<br><span style="font-size:0.9em;color:#00fff7;">Enter passcode to continue</span></p>
-        <div id="staticrypt_loading" class="staticrypt-spinner-container">
-          <div class="staticrypt-spinner"></div>
-        </div>
-
-        <div id="staticrypt_content" class="staticrypt-content hidden">
-          <div class="staticrypt-page">
-            <div class="staticrypt-form">
-              <div class="staticrypt-instructions">
-                <p class="staticrypt-title">/*[|template_title|]*/0</p>
-                <p>/*[|template_instructions|]*/0</p>
-              </div>
-
-              <hr class="staticrypt-hr" />
-
-              <form id="staticrypt-form" action="#" method="post">
-                <input
-                  id="staticrypt-password"
-                  type="password"
-                  name="password"
-                  placeholder="/*[|template_placeholder|]*/0"
-                  autofocus
-                />
-
-                <label
-                  id="staticrypt-remember-label"
-                  class="staticrypt-remember hidden"
-                >
-                  <input id="staticrypt-remember" type="checkbox" name="remember" />
-                  /*[|template_remember|]*/0
-                </label>
-
-                <input
-                  type="submit"
-                  class="staticrypt-decrypt-button"
-                  value="/*[|template_button|]*/0"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div id="login-fun-message" style="display:none;margin-top:1.5em;font-size:1.2em;color:#00fff7;font-family:'Share Tech Mono', monospace;text-shadow:0 0 8px #00fff7;">ACCESS GRANTED<br><span style='font-size:1.5em;'>▌█ ▄█▀█▄ ▄█▀█▄ ▄█▀█▄</span></div>
-      </div>
-      <footer style="margin-top:2em;color:#00fff7;font-size:1em;font-family:'Share Tech Mono', monospace;text-shadow:0 0 4px #00fff7;">
-        <span style="color:#ff003c;">Sagasys Technology Group</span> &copy; 2025 | <a href="https://robinmoisson.github.io/staticrypt" style="color:#00fff7;text-decoration:underline;">StatiCrypt</a>
-      </footer>
+  <body class="staticrypt-body">
+    <a
+      class="github-fork-ribbon"
+      href="https://github.com/a-nau/password-protected-website-template"
+      data-ribbon="Template on GitHub"
+      title="Template on GitHub"
+    >
+      Template on GitHub
+    </a>
+    <div id="staticrypt_loading" class="staticrypt-spinner-container">
+      <div class="staticrypt-spinner"></div>
     </div>
+
+    <div id="staticrypt_content" class="staticrypt-content hidden">
+      <div class="staticrypt-page">
+        <div class="staticrypt-form">
+          <div class="staticrypt-instructions">
+            <p class="staticrypt-title">/*[|template_title|]*/0</p>
+            <p>/*[|template_instructions|]*/0</p>
+          </div>
+
+          <hr class="staticrypt-hr" />
+
+          <form id="staticrypt-form" action="#" method="post">
+            <input
+              id="staticrypt-password"
+              type="password"
+              name="password"
+              placeholder="/*[|template_placeholder|]*/0"
+              autofocus
+            />
+
+            <label
+              id="staticrypt-remember-label"
+              class="staticrypt-remember hidden"
+            >
+              <input id="staticrypt-remember" type="checkbox" name="remember" />
+              /*[|template_remember|]*/0
+            </label>
+
+            <input
+              type="submit"
+              class="staticrypt-decrypt-button"
+              value="/*[|template_button|]*/0"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="staticrypt-footer">
+      <p class="pull-right">
+        Created with
+        <a href="https://github.com/a-nau/password-protected-website-template"
+          >PPW Template</a
+        >
+        and <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a>.
+      </p>
+    </footer>
+
     <script>
-      
-          // these variables will be filled when generating the file - the template format is '/*[|variable_name|]*/0'
+      // these variables will be filled when generating the file - the template format is '/*[|variable_name|]*/0'
       const staticryptInitiator = /*[|js_staticrypt|]*/ 0;
       const templateError = "/*[|template_error|]*/0",
         isRememberEnabled = /*[|is_remember_enabled|]*/ 0,
@@ -309,9 +302,6 @@
 
           if (!isSuccessful) {
             alert(templateError);
-            document.getElementById("login-fun-message").style.display = "none";
-          } else {
-            document.getElementById("login-fun-message").style.display = "block";
           }
         });
     </script>
